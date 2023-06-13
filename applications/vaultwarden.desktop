@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Vaultwarden
+Type=Application
+Version=1.4
+Comment=Local Vaultwarden
+Keywords=;
+Categories=GTK;WebApps;;
+Exec=/home/marc/.local/bin/desktop-service vaultwarden localhost:8000
+Icon=FFPWA-01H0GPCMA9TS9QBH7B6J5FHP6J
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
