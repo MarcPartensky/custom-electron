@@ -7,7 +7,7 @@ function createWindow() {
   const win = new BrowserWindow({
      autoHideMenuBar: true
   });
-  win.loadURL(process.env.HOST);
+  win.loadURL("http://" + process.env.HOST);
   win.webContents.setZoomFactor(10); // Adjust the value as needed
 
   // Register global shortcuts for zooming in and out
