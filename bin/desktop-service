@@ -3,9 +3,11 @@
 SERVICE=$1
 ELECTRON_HOST=$2
 
+
+PROGRAMS=~/git
 # DOCKER_HOST=unix:///run/docker.sock
-SERVICES_PATH=~/git/docker/services
-ELECTRON_PATH=~/git/custom-electron
+SERVICES_PATH=$PROGRAMS/docker/services
+ELECTRON_PATH=$PROGRAMS/desktop-service
 
 docker compose -f $SERVICES_PATH/postgres.yml up -d postgres
 docker compose -f $SERVICES_PATH/$SERVICE.yml up -d $SERVICE
