@@ -14,6 +14,7 @@ SERVICES_PATH=$PROGRAMS/docker/services
 ELECTRON_PATH=$PROGRAMS/desktop-service
 
 docker compose -f $SERVICES_PATH/postgres.yml up -d postgres
+docker compose -f $SERVICES_PATH/ldap.yml up -d ldap
 docker compose -f $SERVICES_PATH/$COMPOSE_FILE.yml up -d $SERVICES
 HOST=$ELECTRON_HOST electron $ELECTRON_PATH
 docker compose -f $SERVICES_PATH/$COMPOSE_FILE.yml rm -sf $SERVICES
