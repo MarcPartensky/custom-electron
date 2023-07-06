@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Serge
+Type=Application
+Version=1.4
+Comment=Local Serge
+Keywords=;
+Categories=GTK;WebApps;;
+Exec=/home/marc/.local/bin/desktop-service localhost:8004 serge
+# Icon=resume
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
